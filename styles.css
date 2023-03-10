@@ -1,12 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap');
+
 @font-face {
     font-family: "norse-bold";
     src: url("images/Norse-Bold.otf");
 }
 
+:root {
+    --backgroundcolor: #fdfdf5;
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
 h1 {
     font-family: "norse-bold";
+    font-size: 6rem;
+    color: var(--backgroundcolor);
+    margin: 0;
+    vertical-align: baseline;
+    height: 6rem;
+    line-height: 7rem;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgba(0, 0, 0, 0.93);
+    overflow: hidden;
+}
+
+.main-container {
+    display: flex;
+    flex: row;
+    height: 100vh;
+}
+
+.image-container {
+    flex: 1 1 100px;
+    position: relative;
+    height: 100vh;
+}
+
+.form-container {
+    flex: 2 1 100px;
+}
+
+img {
+    width: 35vw;
+    height: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 .logo-background {
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35vw;
+    position: absolute;
+    top: 20%;
+}
+
+.logo {
+    width: 15%;
+    padding: 1rem;
+}
+
+.image-container p:first-of-type {
+    position: absolute;
+    bottom: 1.5%;
+    color: var(--backgroundcolor);
+    font-weight: 300;
+    font-size: 0.85rem;
+    width: 35vw;
+    text-align: center;
+}
+
+.image-container a {
+    color: var(--backgroundcolor);
+}
+
+.form-container {
+    background-color: var(--backgroundcolor);
 }
