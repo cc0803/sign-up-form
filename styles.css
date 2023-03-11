@@ -12,6 +12,7 @@
 * {
     font-family: 'Poppins', sans-serif;
     color: #333;
+    overflow: hidden;
 }
 
 h1 {
@@ -124,7 +125,14 @@ img {
 }
 
 button {
-    margin-top: 20px;
+    margin: 3rem 0 2rem 3rem;
+    width: 20%;
+    height: 15%;
+    border-radius: 10px;
+    font-size: clamp(0.7rem, 2vh, 1.3rem);
+    border: 0;
+    background-color: #596D48;
+    color: var(--color);
 }
 
 .form-section {
@@ -181,4 +189,12 @@ input:required:placeholder-shown + span::after {
 input::placeholder {
     font-weight: 300;
     font-size: 0.8rem;
+}
+
+.log-in {
+    margin-left: 3rem;
+}
+
+.log-in>a{
+    color: #596D48;
 }
