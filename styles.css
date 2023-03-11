@@ -103,10 +103,14 @@ img {
     width: clamp(45ch, 80%, 70ch);
 }
 
+
 .description p:first-child {
-    margin-top: 15%;
+    margin-top: 10%;
 }
 
+.description p:last-child {
+    margin-bottom: 3rem;
+}
 .italic {
     font-style: italic;
 }
@@ -114,8 +118,36 @@ img {
 .form-container .container:nth-child(2){
     background-color: white;
     box-shadow: 0 4px 5px #ccc;
+    flex-wrap: wrap;
+    flex-direction: row;
 }
 
 button {
     margin-top: 20px;
+}
+
+.form-section {
+    display: flex;
+    flex-direction: column;
+    width: 40%; 
+    margin-left: 5%;
+}
+
+input {
+    width: 60%;
+}
+
+h3 {
+    width: 80%;
+    margin-left: 2.5rem;
+    font-size: 1.5rem;
+}
+
+form {
+    width: 100%;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
 }
