@@ -177,3 +177,8 @@ input:required:placeholder-shown + span::after {
     top: -4px;
     left: 50%;
 }
+
+input::placeholder {
+    font-weight: 300;
+    font-size: 0.8rem;
+}
