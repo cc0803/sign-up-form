@@ -6,7 +6,7 @@
 }
 
 :root {
-    --backgroundcolor: #fdfdf5;
+    --color: #fdfdf5;
 }
 
 * {
@@ -16,7 +16,7 @@
 h1 {
     font-family: "norse-bold";
     font-size: 6rem;
-    color: var(--backgroundcolor);
+    color: var(--color);
     margin: 0;
     vertical-align: baseline;
     height: 6rem;
@@ -71,7 +71,7 @@ img {
 .image-container p:first-of-type {
     position: absolute;
     bottom: 1.5%;
-    color: var(--backgroundcolor);
+    color: var(--color);
     font-weight: 300;
     font-size: 0.85rem;
     width: 35vw;
@@ -79,9 +79,16 @@ img {
 }
 
 .image-container a {
-    color: var(--backgroundcolor);
+    color: var(--color);
 }
 
 .form-container {
-    background-color: var(--backgroundcolor);
+    background-color: var(--color);
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    flex: auto;
+    height: 33vh;
 }
