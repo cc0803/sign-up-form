@@ -83,7 +83,7 @@ img {
 }
 
 .form-container {
-    background-color: var(--color);
+    background-color: #f7f7f7;
     display: flex;
     flex-direction: column;
 }
@@ -91,4 +91,31 @@ img {
 .container {
     flex: auto;
     height: 33vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.description p {
+    padding: 0.8rem 2.5rem;
+    font-size: 1.3rem;
+    margin: 0;
+    font-weight: 600;
+    width: clamp(45ch, 80%, 70ch);
+}
+
+.description p:first-child {
+    margin-top: 15%;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.form-container .container:nth-child(2){
+    background-color: white;
+    box-shadow: 0 4px 5px #ccc;
+}
+
+button {
+    margin-top: 20px;
 }
